@@ -1,0 +1,120 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+dialog::backdrop {
+  background-color: rgba(50, 50, 50, 0.6);
+}
+
+dialog {
+  border: 0px;
+  border-radius: 10px;
+}
+
+.header {
+  height: 72px;
+  background: #063970;
+  color: white;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  align-self: flex-start;
+  width: 100vw;
+}
+
+#bookDialog form {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  align-items: center;
+}
+
+#confirmBtn {
+  background-color: #063970;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  width: 15rem;
+  height: 3rem;
+  margin-top: 10px;
+}
+
+#showDialog {
+  background: none;
+  border: none;
+	color: inherit;
+	cursor: pointer;
+  font-size: 1.5rem;
+  margin-top: 12px;
+  padding: 0px;
+  width: 8rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+input[type="text"],
+input[type="number"] {
+  font-size: 1.2rem;
+  padding: 10px;
+}
+
+input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.cardSection {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+}
+
+.card {
+  border: 1px solid #eee;
+  box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+  margin: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-shrink: 0;
+}
+
+.card p {
+  text-align: center;
+}
+
+.removeBtn {
+  font-family: inherit;
+  font-size: inherit;
+  width: 10rem;
+  border-radius: 10px;
+}
+
+.readButton {
+  font-family: inherit;
+  font-size: inherit;
+  width: 10rem;
+  border-radius: 10px;
+}
